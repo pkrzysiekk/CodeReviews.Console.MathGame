@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Runtime.CompilerServices;
 
 namespace MathGame
 {
@@ -174,7 +173,6 @@ namespace MathGame
         }
         static int PlayDivGame()
         {
-            Random random = new Random();
             int rounds = 0;
             int score = 0;
             int numberOfRounds = 5;
