@@ -239,7 +239,7 @@ namespace MathGame
                 int playerScore = 0;
                 DisplayGameMenu(playerName,startDate);
                  choice = Console.ReadLine();
-                switch (choice)
+                switch (choice.ToLower())
                 {
                     case "1":
                         playerScore=PlayAddGame();
@@ -274,12 +274,16 @@ namespace MathGame
                         playerName = Console.ReadLine();
                         Console.WriteLine("Succes!");
                         break;
+                    case "exit":
+                        Console.WriteLine("See you!");
+                        return;
+                        
                     default:
                         Console.WriteLine("Incorrect choice,please try again");
                         break;
 
                 }
-            } while (choice.ToLower() != "exit");
+            } while (true);
             
 
             
